@@ -1,0 +1,1 @@
+The optimized version is the root project: `index.html`, `styles.min.css`, `app.min.js`, and `assets/`. Use the same browser and Lighthouse settings for a fair comparison.
