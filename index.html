@@ -1,78 +1,232 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="A lightweight demo storefront built to demonstrate front-end performance optimization.">
-  <title>Evergreen — Thoughtful everyday goods</title>
-  <link rel="preload" href="hero.svg" as="image" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.min.css">
-  <script src="app.min.js" defer></script>
+  <meta name="description" content="Thoughtful everyday essentials designed to last and leave a lighter footprint.">
+
+  <title>Evergreen — Thoughtful Everyday Goods</title>
+
+  <!-- Optimized asset loading -->
+  <link rel="preload" href="./hero.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.min.css">
+  <script src="./app.min.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="brand" href="#" aria-label="Evergreen home"><span class="brand-mark" aria-hidden="true">e</span> evergreen</a>
+    <a class="brand" href="./" aria-label="Evergreen home">
+      <span class="brand-mark" aria-hidden="true">e</span>
+      evergreen
+    </a>
+
     <nav aria-label="Main navigation">
       <a href="#collection">Collection</a>
       <a href="#story">Our approach</a>
     </nav>
-    <a class="header-cta" href="#collection">Explore goods <span aria-hidden="true">↗</span></a>
+
+    <a class="header-cta" href="#collection">
+      Explore goods <span aria-hidden="true">↗</span>
+    </a>
   </header>
 
   <main id="main">
+
+    <!-- Hero section -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> SMALL CHOICES, BETTER DAYS</p>
+        <p class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          SMALL CHOICES, BETTER DAYS
+        </p>
+
         <h1 id="hero-title">Less, but<br><em>better.</em></h1>
-        <p class="hero-description">Everyday essentials made with care, designed to last, and chosen to leave a lighter footprint.</p>
+
+        <p class="hero-description">
+          Everyday essentials made with care, designed to last,
+          and chosen to leave a lighter footprint.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-dark" href="#collection">Shop the collection <span aria-hidden="true">→</span></a>
+          <a class="button button-dark" href="#collection">
+            Shop the collection <span aria-hidden="true">→</span>
+          </a>
           <a class="text-link" href="#story">Our philosophy</a>
         </div>
-        <div class="hero-proof"><span class="proof-icon" aria-hidden="true">✓</span><span>Considered materials. Timeless utility.</span></div>
+
+        <div class="hero-proof">
+          <span class="proof-icon" aria-hidden="true">✓</span>
+          <span>Considered materials. Timeless utility.</span>
+        </div>
       </div>
+
       <div class="hero-art">
-        <img src="hero.svg" width="720" height="760" fetchpriority="high" alt="Illustration of a reusable bottle, tote bag and leafy branch">
-        <div class="art-note"><span>01 / 03</span><span>Made for everyday</span></div>
+        <img
+          src="./hero.svg"
+          width="720"
+          height="760"
+          fetchpriority="high"
+          alt="Illustration of a reusable bottle, tote bag and leafy branch">
+
+        <div class="art-note">
+          <span>01 / 03</span>
+          <span>Made for everyday</span>
+        </div>
       </div>
     </section>
 
+    <!-- Brand commitments -->
     <section class="trust-strip" aria-label="Our commitments">
-      <div><span class="trust-number">01</span><span>Thoughtful materials</span></div>
-      <div><span class="trust-number">02</span><span>Built to be used</span></div>
-      <div><span class="trust-number">03</span><span>Less unnecessary packaging</span></div>
+      <div>
+        <span class="trust-number">01</span>
+        <span>Thoughtful materials</span>
+      </div>
+
+      <div>
+        <span class="trust-number">02</span>
+        <span>Built to be used</span>
+      </div>
+
+      <div>
+        <span class="trust-number">03</span>
+        <span>Less unnecessary packaging</span>
+      </div>
     </section>
 
-    <section class="collection section-wrap" id="collection" aria-labelledby="collection-title">
+    <!-- Product collection -->
+    <section
+      class="collection section-wrap"
+      id="collection"
+      aria-labelledby="collection-title">
+
       <div class="section-heading">
-        <div><p class="eyebrow">THE EVERYDAY EDIT</p><h2 id="collection-title">Good things, <em>well made.</em></h2></div>
+        <div>
+          <p class="eyebrow">THE EVERYDAY EDIT</p>
+          <h2 id="collection-title">Good things, <em>well made.</em></h2>
+        </div>
+
         <p>Useful objects that earn their place in your routine.</p>
       </div>
+
       <div class="product-grid">
+
         <article class="product-card">
-          <div class="product-image image-sand"><img src="bottle.svg" width="420" height="420" loading="lazy" decoding="async" alt="Reusable sage-green water bottle"></div>
-          <div class="product-meta"><div><h3>Daily bottle</h3><p>Recycled stainless steel</p></div><span class="price">₹899</span></div>
+          <div class="product-image image-sand">
+            <img
+              src="./bottle.svg"
+              width="420"
+              height="420"
+              loading="lazy"
+              decoding="async"
+              alt="Reusable sage-green water bottle">
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>Daily bottle</h3>
+              <p>Recycled stainless steel</p>
+            </div>
+            <span class="price">₹899</span>
+          </div>
         </article>
+
         <article class="product-card">
-          <div class="product-image image-peach"><img src="tote.svg" width="420" height="420" loading="lazy" decoding="async" alt="Natural cotton tote bag"></div>
-          <div class="product-meta"><div><h3>Market tote</h3><p>Organic cotton canvas</p></div><span class="price">₹599</span></div>
+          <div class="product-image image-peach">
+            <img
+              src="./tote.svg"
+              width="420"
+              height="420"
+              loading="lazy"
+              decoding="async"
+              alt="Natural cotton tote bag">
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>Market tote</h3>
+              <p>Organic cotton canvas</p>
+            </div>
+            <span class="price">₹599</span>
+          </div>
         </article>
+
         <article class="product-card">
-          <div class="product-image image-green"><img src="soap.svg" width="420" height="420" loading="lazy" decoding="async" alt="Minimal botanical soap bar"></div>
-          <div class="product-meta"><div><h3>Botanical bar</h3><p>Plant-based ingredients</p></div><span class="price">₹249</span></div>
+          <div class="product-image image-green">
+            <img
+              src="./soap.svg"
+              width="420"
+              height="420"
+              loading="lazy"
+              decoding="async"
+              alt="Minimal botanical soap bar">
+          </div>
+
+          <div class="product-meta">
+            <div>
+              <h3>Botanical bar</h3>
+              <p>Plant-based ingredients</p>
+            </div>
+            <span class="price">₹249</span>
+          </div>
         </article>
+
       </div>
     </section>
 
+    <!-- Brand story -->
     <section class="story" id="story" aria-labelledby="story-title">
-      <div class="story-art"><img src="leaf.svg" width="560" height="480" loading="lazy" decoding="async" alt="Simple botanical illustration of a branch and leaves"></div>
-      <div class="story-copy"><p class="eyebrow">A MORE CONSIDERED ROUTINE</p><h2 id="story-title">Keep what<br><em>works.</em></h2><p>We believe the best product is the one you reach for again and again. So we focus on practical design, dependable materials, and details that make daily life feel a little simpler.</p><a class="text-link" href="#collection">Find your everyday essential <span aria-hidden="true">→</span></a></div>
+      <div class="story-art">
+        <img
+          src="./leaf.svg"
+          width="560"
+          height="480"
+          loading="lazy"
+          decoding="async"
+          alt="Botanical illustration of a branch and leaves">
+      </div>
+
+      <div class="story-copy">
+        <p class="eyebrow">A MORE CONSIDERED ROUTINE</p>
+
+        <h2 id="story-title">Keep what<br><em>works.</em></h2>
+
+        <p>
+          We believe the best product is the one you reach for again
+          and again. So we focus on practical design, dependable
+          materials, and details that make daily life feel a little simpler.
+        </p>
+
+        <a class="text-link" href="#collection">
+          Find your everyday essential <span aria-hidden="true">→</span>
+        </a>
+      </div>
     </section>
+
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">e</span> evergreen</a><p>Made for everyday. Designed with intention.</p><span>© <span id="year">2026</span> Evergreen Demo</span></footer>
-  <noscript><p class="noscript-note">JavaScript is disabled. The collection and all page content remain available.</p></noscript>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">e</span>
+      evergreen
+    </a>
+
+    <p>Made for everyday. Designed with intention.</p>
+
+    <span>
+      © <span id="year">2026</span> Evergreen Demo
+    </span>
+  </footer>
+
+  <noscript>
+    <p class="noscript-note">
+      JavaScript is disabled. The collection and all page content remain available.
+    </p>
+  </noscript>
 </body>
 </html>
+```
