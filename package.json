@@ -1,0 +1,15 @@
+{
+  "name": "evergreen-performance-optimization",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-light frontend performance optimization demonstration and Lighthouse workflow.",
+  "scripts": {
+    "serve": "npx http-server . -p 4173 -c-1",
+    "audit:mobile": "npx lighthouse http://localhost:4173 --preset=perf --form-factor=mobile --output=json --output=html --output-path=./reports/mobile",
+    "audit:desktop": "npx lighthouse http://localhost:4173 --preset=desktop --output=json --output=html --output-path=./reports/desktop"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "lighthouse": "^12.0.0"
+  }
+}

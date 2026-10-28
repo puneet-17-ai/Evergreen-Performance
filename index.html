@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evergreen collection — a lightweight, responsive collection catalogue demo.">
+  <meta name="theme-color" content="#f5f7f2">
+  <title>Evergreen Collection | Lightweight Catalogue</title>
+  <link rel="preload" href="./assets/styles.css" as="style">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Evergreen home"><span class="brand-mark" aria-hidden="true">E</span> Evergreen</a>
+    <nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#about">About</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">CURATED FOR EVERYDAY LIVING</p>
+        <h1 id="hero-title">A little more <em>evergreen.</em></h1>
+        <p class="hero-text">Thoughtful essentials, selected to bring calm, function, and lasting character to your space.</p>
+        <a class="button" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract botanical shapes in a warm green palette">
+        <span class="sun"></span><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="stem"></span>
+      </div>
+    </section>
+    <section id="collection" class="collection section-wrap" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">THE EDIT</p><h2 id="collection-title">The collection</h2></div><p>Useful objects. Considered design.</p></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+    <section id="about" class="about section-wrap"><p class="eyebrow">OUR APPROACH</p><h2>Less noise. More intention.</h2><p>Evergreen is a sample catalogue built to demonstrate responsive layout, semantic HTML, accessible controls, and front-end performance practices.</p></section>
+  </main>
+  <footer class="site-footer"><span>© <span id="year"></span> Evergreen Studio</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
